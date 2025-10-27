@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env
+.ipynb_checkpoints/
+projects/sleep-patterns/artifacts/
+projects/sleep-patterns/data/*.xlsx
+projects/sleep-patterns/data/*.csv

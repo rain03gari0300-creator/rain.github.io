@@ -1,0 +1,11 @@
+age,gender,bmi,resting_hr,sleep_hours,sleep_quality,stress_level,caffeine_mg,alcohol_per_week,screen_time_hours,activity_days_week,snoring,apnea_risk_score,shift_work,weekend,nap_minutes,chronotype,smoker,label
+28,Male,24.8,70,7.5,7.2,4.0,80,1,4.5,3,No,12.0,Day,No,15,Morning,No,Normal
+51,Male,31.2,78,6.0,5.5,6.5,180,3,7.0,1,Yes,55.0,Night,No,30,Evening,Yes,Apnea
+34,Female,22.1,68,6.2,5.9,7.0,200,0,8.5,0,No,10.0,Rotating,Yes,20,Evening,No,Insomnia
+45,Male,27.6,74,7.8,7.4,3.5,60,2,4.0,4,No,18.0,Day,No,10,Neutral,No,Normal
+39,Female,26.9,72,5.5,4.8,8.0,250,1,9.0,1,No,22.0,Night,No,35,Evening,No,Insomnia
+60,Male,33.5,80,6.8,6.0,5.0,120,4,6.5,2,Yes,78.0,Day,Yes,25,Morning,Yes,Apnea
+22,Female,21.4,65,8.5,8.2,2.5,40,0,3.0,5,No,8.0,Day,No,5,Morning,No,Normal
+48,Male,29.8,76,5.8,5.0,7.5,220,2,8.0,0,Yes,62.0,Rotating,Yes,40,Evening,Yes,Apnea
+31,Female,23.5,69,6.9,6.8,4.5,90,1,5.0,3,No,15.0,Day,No,12,Neutral,No,Normal
+55,Male,30.7,82,5.2,4.5,8.5,260,5,10.0,1,Yes,85.0,Night,No,50,Evening,Yes,Apnea
