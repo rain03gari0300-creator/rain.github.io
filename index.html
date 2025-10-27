@@ -1,37 +1,253 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Mi sitio en GitHub Pages</title>
-  <meta name="description" content="Bienvenido a mi sitio en GitHub Pages" />
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚀</text></svg>">
-  <style>
-    :root { color-scheme: light dark; }
-    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; margin: 0; padding: 2rem; line-height: 1.6; }
-    .container { max-width: 800px; margin: 0 auto; }
-    h1 { font-size: 2.2rem; margin: 0 0 1rem; }
-    a { color: #0969da; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    .card { border: 1px solid #d0d7de33; border-radius: 8px; padding: 1rem 1.25rem; }
-    footer { margin-top: 2rem; opacity: 0.7; font-size: 0.9rem; }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portafolio | rain03gari0300-creator</title>
+  <meta name="description" content="Portafolio de proyectos de rain03gari0300-creator" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-pIVpKp2O8vUYo3fXy2g0s0oU8tTqC7v8nZlqAAbDUgXy+S7tq0iZV0m8v6QdVnS7R+1k3m0p39hQv6VY1m7WGA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <main class="container">
-    <h1>¡Hola, GitHub Pages! 🚀</h1>
-    <p>Este es mi sitio publicado con <a href="https://pages.github.com/">GitHub Pages</a>.</p>
-    <div class="card">
-      <h2>¿Qué sigue?</h2>
-      <ul>
-        <li>Edita <code>index.html</code> y sube cambios a <code>main</code>.</li>
-        <li>Para más páginas, añade archivos <code>.html</code> o una carpeta <code>docs/</code>.</li>
-        <li>Si usas directorios con “_”, mantén el archivo <code>.nojekyll</code> en la raíz.</li>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-logo" aria-label="Inicio">
+        <span>RN</span>
+      </div>
+      <ul class="nav-menu">
+        <li><a class="nav-link" href="#inicio">Inicio</a></li>
+        <li><a class="nav-link" href="#conoceme">Conóceme</a></li>
+        <li><a class="nav-link" href="#proyectos">Proyectos</a></li>
+        <li><a class="nav-link" href="#contacto">Contacto</a></li>
       </ul>
+      <button class="hamburger" aria-label="Abrir menú">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
     </div>
-    <footer>
-      Hecho por <strong>rain03gari0300-creator</strong> en <strong>rain.github.io</strong>.
-    </footer>
+  </nav>
+
+  <!-- Cursor personalizado -->
+  <div class="custom-cursor" aria-hidden="true"></div>
+
+  <!-- Fondo animado -->
+  <div class="background-animation" aria-hidden="true">
+    <div class="waves">
+      <div class="wave wave1"></div>
+      <div class="wave wave2"></div>
+      <div class="wave wave3"></div>
+    </div>
+  </div>
+
+  <main>
+    <!-- Hero -->
+    <section id="inicio" class="section hero">
+      <div class="container">
+        <div class="hero-content">
+          <h1 class="hero-title">
+            <span id="typing-text"></span>
+            <span class="cursor">|</span>
+          </h1>
+          <p class="hero-subtitle">Desarrollo proyectos web y de datos, con foco en experiencias claras y útiles.</p>
+          <div class="hero-cta">
+            <a href="#conoceme" class="btn btn-primary">Conóceme</a>
+            <a href="#contacto" class="btn btn-secondary">Contáctame</a>
+          </div>
+        </div>
+        <div class="scroll-indicator">
+          <div class="scroll-down"><i class="fas fa-chevron-down"></i></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="conoceme" class="section about">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Conóceme</h2>
+          <div class="section-divider"></div>
+        </div>
+        <div class="about-content">
+          <div class="about-text">
+            <p>Hola, soy rain03gari0300-creator. Me interesa construir sitios web rápidos, accesibles y bien diseñados. Este portafolio es una plantilla ligera hecha con HTML, CSS y JavaScript.</p>
+            <p>Me gusta trabajar con GitHub Pages para despliegues simples y reproducibles.</p>
+          </div>
+          <div class="skills-grid">
+            <div class="skill-item">
+              <i class="fas fa-code"></i>
+              <h3>Web</h3>
+              <p>HTML, CSS, JS</p>
+            </div>
+            <div class="skill-item">
+              <i class="fas fa-rocket"></i>
+              <h3>Deploy</h3>
+              <p>GitHub Actions & Pages</p>
+            </div>
+            <div class="skill-item">
+              <i class="fas fa-universal-access"></i>
+              <h3>Accesibilidad</h3>
+              <p>UX simple y claro</p>
+            </div>
+            <div class="skill-item">
+              <i class="fas fa-gauge-high"></i>
+              <h3>Performance</h3>
+              <p>Ligero y optimizado</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Proyectos -->
+    <section id="proyectos" class="section projects">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Proyectos</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <!-- Pestañas de categorías -->
+        <div class="project-tabs">
+          <button class="tab-button active" data-category="web"><i class="fas fa-globe"></i> Web</button>
+          <button class="tab-button" data-category="datos"><i class="fas fa-database"></i> Datos</button>
+          <button class="tab-button" data-category="otros"><i class="fas fa-wand-magic-sparkles"></i> Otros</button>
+        </div>
+
+        <!-- Contenido de categorías -->
+        <div class="project-category-content active" id="web-content">
+          <div class="projects-grid">
+            <article class="project-card" data-title="Landing minimal" data-description="Landing page minimalista con hero, CTA y secciones." data-tags="HTML,CSS" data-link="https://github.com/rain03gari0300-creator">
+              <div class="project-image">
+                <img src="https://placehold.co/600x360/png" alt="Landing minimal" class="project-img" />
+                <div class="project-category">Web</div>
+              </div>
+              <div class="project-header">
+                <h3>Landing minimal</h3>
+                <div class="project-tech"><span class="tech-tag">HTML</span><span class="tech-tag">CSS</span></div>
+              </div>
+              <p class="project-description">Plantilla limpia para páginas de destino.</p>
+              <div class="project-footer">
+                <a class="btn btn-github" href="https://github.com/rain03gari0300-creator" target="_blank"><i class="fab fa-github"></i> Ver en GitHub</a>
+              </div>
+            </article>
+
+            <article class="project-card" data-title="Portafolio single-page" data-description="Sitio de portafolio con navegación interna, tabs y modal." data-tags="HTML,CSS,JS" data-link="https://github.com/rain03gari0300-creator">
+              <div class="project-image">
+                <img src="https://placehold.co/600x360/png" alt="Portafolio single-page" class="project-img" />
+                <div class="project-category">Web</div>
+              </div>
+              <div class="project-header">
+                <h3>Portafolio single-page</h3>
+                <div class="project-tech"><span class="tech-tag">HTML</span><span class="tech-tag">CSS</span><span class="tech-tag">JS</span></div>
+              </div>
+              <p class="project-description">La base que estás viendo ahora.</p>
+              <div class="project-footer">
+                <a class="btn btn-github" href="https://github.com/rain03gari0300-creator" target="_blank"><i class="fab fa-github"></i> Ver en GitHub</a>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="project-category-content" id="datos-content">
+          <div class="projects-grid">
+            <article class="project-card" data-title="Dashboard de datos" data-description="Dashboard estático con gráficos incrustados." data-tags="Datos,Frontend" data-link="https://github.com/rain03gari0300-creator">
+              <div class="project-image">
+                <img src="https://placehold.co/600x360/png" alt="Dashboard de datos" class="project-img" />
+                <div class="project-category">Datos</div>
+              </div>
+              <div class="project-header">
+                <h3>Dashboard de datos</h3>
+                <div class="project-tech"><span class="tech-tag">Datos</span><span class="tech-tag">Frontend</span></div>
+              </div>
+              <p class="project-description">Prototipo de dashboard con assets estáticos.</p>
+              <div class="project-footer">
+                <a class="btn btn-github" href="https://github.com/rain03gari0300-creator" target="_blank"><i class="fab fa-github"></i> Ver en GitHub</a>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="project-category-content" id="otros-content">
+          <div class="projects-grid">
+            <article class="project-card" data-title="Utilidades" data-description="Colección de utilidades pequeñas." data-tags="JS" data-link="https://github.com/rain03gari0300-creator">
+              <div class="project-image">
+                <img src="https://placehold.co/600x360/png" alt="Utilidades" class="project-img" />
+                <div class="project-category">Otros</div>
+              </div>
+              <div class="project-header">
+                <h3>Utilidades</h3>
+                <div class="project-tech"><span class="tech-tag">JS</span></div>
+              </div>
+              <p class="project-description">Experimentos y pruebas rápidas.</p>
+              <div class="project-footer">
+                <a class="btn btn-github" href="https://github.com/rain03gari0300-creator" target="_blank"><i class="fab fa-github"></i> Ver en GitHub</a>
+              </div>
+            </article>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="section contact">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Contacto</h2>
+          <div class="section-divider"></div>
+        </div>
+        <div class="contact-content">
+          <div class="contact-info">
+            <h3>¿Colaboramos?</h3>
+            <p>Abierto a ideas y proyectos interesantes. Escríbeme o conéctame por redes.</p>
+            <div class="contact-actions">
+              <a href="#" class="btn btn-primary contact-btn" id="downloadCV"><i class="fas fa-download"></i> Descargar CV</a>
+            </div>
+            <div class="contact-links">
+              <a class="contact-link" href="mailto:tuemail@example.com"><i class="fas fa-envelope"></i><span>tuemail@example.com</span></a>
+              <a class="contact-link" href="https://github.com/rain03gari0300-creator" target="_blank"><i class="fab fa-github"></i><span>github.com/rain03gari0300-creator</span></a>
+              <a class="contact-link" href="#" target="_blank"><i class="fab fa-linkedin"></i><span>linkedin.com/in/tu-perfil</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 rain03gari0300-creator. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Modal de proyecto -->
+  <div id="projectModal" class="modal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-content">
+      <button class="close-modal" aria-label="Cerrar">&times;</button>
+      <div class="modal-header">
+        <h2 id="modalTitle"></h2>
+        <div id="modalTags" class="modal-tags"></div>
+      </div>
+      <div class="modal-body">
+        <div class="modal-description">
+          <h3>Descripción del Proyecto</h3>
+          <p id="modalDescription"></p>
+        </div>
+        <div class="modal-technologies">
+          <h3>Tecnologías Utilizadas</h3>
+          <div id="modalTechnologies"></div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <a id="modalGithubLink" href="#" class="btn btn-primary" target="_blank"><i class="fab fa-github"></i> Ver en GitHub</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js?v=1"></script>
 </body>
 </html>
