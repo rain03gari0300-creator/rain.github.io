@@ -20,11 +20,12 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      # Si construyes (Vite/React/etc.), agrega pasos aquí y cambia 'path' a "dist".
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: "."
+          path: "."  # cambia a "dist" si construyes (Vite/React/etc.)
   deploy:
     needs: build
     runs-on: ubuntu-latest
